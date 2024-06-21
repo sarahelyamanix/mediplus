@@ -5,11 +5,11 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>Contact Us</h2>
+							<h2>{{__('messages.contact')}}</h2>
 							<ul class="bread-list">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">{{__('messages.home')}}</a></li>
 								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Contact Us</li>
+								<li class="active" >{{__('messages.contact')}}</li>
 							</ul>
 						</div>
 					</div>
@@ -27,48 +27,52 @@
 							<div class="contact-us-left">
 								<!--Start Google-map -->
 								<div id="myMap">
+									<iframe class="position-relative rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
 								</div>
 								<!--/End Google-map -->
 							</div>
 						</div>
 						<div class="col-lg-6">
 							<div class="contact-us-form">
-								<h2>Contact With Us</h2>
-								<p>If you have any questions please fell free to contact with us.</p>
+								<h2>{{__('messages.contactUs')}}</h2>
+								<p>{{__('messages.contactPara')}}</p>
 								<!-- Form -->
 								<form class="form" method="post" action="mail/mail.php">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="name" placeholder="Name" required="">
+												<input type="text" name="name" placeholder="{{__('messages.name')}}" required="">
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="email" name="email" placeholder="Email" required="">
+												<input type="email" name="email" placeholder="{{__('messages.email')}}" required="">
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="phone" placeholder="Phone" required="">
+												<input type="text" name="phone" placeholder="{{__('messages.phone')}}" required="">
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="subject" placeholder="Subject" required="">
+												<input type="text" name="subject" placeholder="{{__('messages.subject')}}" required="">
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form-group">
-												<textarea name="message" placeholder="Your Message" required=""></textarea>
+												<textarea name="message" placeholder="{{__('messages.message')}}" required=""></textarea>
 											</div>
 										</div>
 										<div class="col-12">
 											<div class="form-group login-btn">
-												<button class="btn" type="submit">Send</button>
+												<button class="btn" type="submit">{{__('messages.send')}}</button>
 											</div>
 											<div class="checkbox">
-												<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Do you want to subscribe our Newsletter ?</label>
+												<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">{{__('messages.news')}}</label>
 											</div>
 										</div>
 									</div>
@@ -107,8 +111,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
-									<h3>Mon - Sat: 8am - 5pm</h3>
-									<p>Sunday Closed</p>
+									<h3>{{__('messages.time')}}</h3>
+									<p>{{__('messages.sunday')}}</p>
 								</div>
 							</div>
 						</div>
